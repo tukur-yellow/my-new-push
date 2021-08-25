@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   line-height: 1.6em;
+}
+
+body{
+   font-family: Bai Jamjuree;
+   overflow-x: hidden;
+}
+
+
+/* UTILITY */
+.curent{
+   color: hsl(171, 66%, 44%) !important;
+}
+a{
+   text-decoration: none;
+   color: black !important;
+   cursor: pointer;
+}
+.btn{
+   background: hsl(171, 66%, 44%);
+   Color:#fff;
+   margin-top: 2rem;
+   padding: 0.5rem;
+   border-radius: 1rem;
+   width: 8rem;
+   border: none;
+   box-shadow: 3px 3px 1rem hsl(210, 10%, 33%);
+}
+
+.btn:hover{opacity: 0.7;}
+.btn-g{
+   background:hsl(233, 100%, 69%);
+   margin-left: 1rem;
+}
+
+p{
+   font-weight: 400px;
+}
+
+.p-1{
+   margin: 2rem;
+}
+h1, h2, h3{
+   font-weight: 600px !important;
+}
+
+#header{
+   background: url('img/bg-header-desktop.png') no-repeat center center/cover;
+   margin-bottom: 10rem;
+   padding: 3rem;
+	width: 100vw;
+	height: 35vh;
+	line-height: 24px;
+   color: #333;
+   text-align: center;
+}
+
+#header .header-container .content{
+   margin: auto;
+   width: 100%;
+}
+ 
+
+
+/* SHOWCASE */
+.showcase .showcase-container .content{
+   margin-bottom: 5rem;
+   padding: 5rem 0;
+}
+.dwn{
+   display: flex;
+   justify-content: center;
+   margin-top: 5rem;
+}
+
+.right{
+   margin: 2rem 0;
+   margin-left: -5rem;
+   margin-right: 5rem;
+   padding-right: 8rem;
+}
+
+.left img{
+   width: 80%;
+}
+.keep-track{
+   text-align: center;
+   justify-content: center;
+}
+
+.clipboard{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.clipboard p{
+   margin-bottom: 2rem;
+}
+
+.clip-img img{
+   width: 80%;
+}
+.super-charge .super-container .cards{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 1rem;
+   margin: 2rem 2rem;
+}
+
+.super-charge .super-container .cards h1,p{
+   padding: 0 1rem;
+   text-justify: justify;
+}
+
+.super-container .text{
+   text-align: center;
+
+}
+
+.sponsors{
+   margin-top: 5rem !important;
+}
+.sponsors-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 10rem;
+}
+.sponsors img{
+   padding: 0 2rem;
+}
+
+.clip-for{
+   margin: 7rem;
+}
+.clip-for .content{
+   text-align: center;
+}
+
+/* FOOTER */
+#footer{
+   width: 100vw;
+   padding: 2rem;
+   background: hsl(201, 11%, 66%);
+}
+#footer .content{
+   display: grid;
+   grid-template-columns: 4fr 7fr 3fr;
+   align-items: center;
+   padding: 0 4rem;
+}
+#footer .content .footer-a{
+   display: flex;
+}
+#footer .content .footer-a span{
+   /* margin: 0 0.5rem; */
+   width: 100%;
+   margin-left: -5rem;
+}
+#footer .content img{
+   margin-left: 2rem;
+   width: 30%;
+}
+#footer .content .socials{
+   justify-self: end;
+   margin-right: 2rem;
+}
+#footer .content .socials a{
+   padding: 1rem;
+   align-items: center;
+}
+
+/* RESPONSIBLE */
+
+@media(max-width:500px){
+   .btn{
+      margin: auto;
+      margin-top: 1rem;
+   }
+
+   .btn-g{
+      margin-top: 1rem;
+   }
+   h1{
+      font-weight: 600px;
+   }
+   #header {
+      display: flex;
+      flex-direction: column;
+   }
+
+   
+
+   #header input{
+      width: 70%;
+   }
+
+
+   .showcase{
+      width: 100%;
+   }
+   .keep-track{
+      margin: 4rem 0;
+   }
+
+   .dwn{
+      display: flex;
+      flex-direction: column;
+   }
+   .dwn img{
+      margin-left: 3rem;
+   }
+   .right .p-1{
+      width: 100%;
+      text-align: center;
+      margin: 0 9rem;
+      padding: 1rem;
+   }
+
+   .clipboard{
+      margin-top: -7rem;
+      margin-bottom: 2rem;
+   }
+
+   .clipboard:first-child{
+      width: 100%;
+   }
+   .super-charge .cards{
+      display: flex;
+      flex-direction: column;
+   }
+   .super-charge .cards .card-1{
+      margin: 2rem;
+      width: 100%;
+   } 
+
+   .sponsors .sponsors-container{
+      display: flex;
+      flex-direction: column;
+   }
+   .sponsors .sponsors-container img{
+    margin: 1.3rem;
+   }
+
+  
+   .clip-for .content{
+      display:flex;
+      flex-direction: column;
+      margin-top: -2rem;
+   }
+
+   .clip-for .content input{
+      width: 100%;
+   }
+
+   /* FOOTER */
+  
+ #footer .content{
+   display: flex;
+   flex-direction: column;
+ }
+
+ #footer .content .footer-a{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+ }
+ #footer .content img{
+    margin-left: -1rem;
+ }
+
+ #footer .content .footer-a span{
+    margin: 1rem 0;
+ }
+
+ #footer .content span.a{
+    margin-bottom: 2rem;
+ }
+ #footer .socials a{
+    margin-left: 1rem;
+ }
+ 
+
+
+   
+
+}
+
+
